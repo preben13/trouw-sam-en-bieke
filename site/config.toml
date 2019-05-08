@@ -1,9 +1,33 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "Sam en Bieke"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+
+[params]
+  description = "negenentwintig mei tweeduizendnegentien"
+
+[[menu.main]]
+    name = "Ons verhaal"
+    url  = "/onsverhaal"
+    weight = 1
+
+[[menu.main]]
+    name = "Trouwdag"
+    url  = "/trouwdag"
+    weight = 2
+
+[[menu.main]]
+    name = "Kan jij er bij zijn?"
+    url  = "/bevestigen"
+    weight = 3
+
+[[menu.main]]
+    name = "Heb je een verzoeknummer?"
+    url  = "/muziek"
+    weight = 4

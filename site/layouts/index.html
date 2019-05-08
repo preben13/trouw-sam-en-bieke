@@ -1,9 +1,22 @@
-{{ define "main" }}
+{{ partial "header" . }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<div class="content container">
+  <div class="cover-picture-overlay"></div>
+  <img src="/sam-en-bieke.jpg" class="cover-picture" />
+  <div class="homepage-content">
+    <p>Welkom op onze website, hier kan je meer informatie vinden over ons trouwfeest.</p>
+    <p>Klik hieronder op de knop, zo kunnen we jullie ook op de hoogte houden van de voorbereidingen en nieuwtjes op de
+      website. </p>
+    <a href="/bevestigen" class="homepage-btn">Kan jij aanwezig zijn?</a>
+  </div>
+</div>
+<div class="content container">
+  <div class="homepage-login">
+    <p>Geef hieronder uw wachtwoord</p>
+    <input type="text" name="login-sb" class="login-sb" />
+    <span class="error">Het wachtwoord is onjuist!</span>
+    <a href="#" class="homepage-btn login">Aanmelden</a>
+  </div>
+</div>
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
-
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
-
-{{ end }}
+{{ partial "footer" . }}
